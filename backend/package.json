@@ -1,0 +1,22 @@
+{
+  "name": "judex-backend",
+  "version": "1.0.0",
+  "description": "Judex AI backend (MongoDB + Express + LangGraphJS + Gemini)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test:mongo": "node test-mongo.js",
+    "indexes": "node scripts/ensure-indexes.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@langchain/langgraph": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.6.0",
+    "zod": "^3.25.6"
+  }
+}
